@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: beelife-app
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - DB_URL=jdbc:mysql://14.225.220.60:3306/beelifeventures
+      - DB_USERNAME=beelife_user
+      - DB_PASSWORD=dfjsdbA3f@a!@#sdb
+    # Bỏ volumes để tránh lỗi ContainerConfig
