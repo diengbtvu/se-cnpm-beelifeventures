@@ -1,0 +1,92 @@
+.owl-testimonial-wrapper {
+  padding: 0px;
+}
+#testimonial-slider {
+  margin: auto;
+  max-width: 800px;
+  border-radius: 20px;
+  padding: 40px;
+  padding-bottom: 20px;
+}
+#testimonial-slider .testimonial-text {
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+#testimonial-slider .testimonial-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#testimonial-slider .testimonial-author,
+#testimonial-slider .testimonial-author-title {
+  text-align: left;
+  display: block;
+  font-size: 17px;
+}
+#testimonial-slider {
+  margin: auto;
+}
+#testimonial-slider .item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+#testimonial-slider .owl-nav {
+  display: none;
+}
+#testimonial-slider .owl-nav span {
+  color: #65bd60;
+  font-size: 4rem;
+  line-height: 0;
+  font-weight: 300;
+  margin: 0 20px;
+}
+#testimonial-slider.owl-carousel .owl-dots .owl-dot.active span,
+#testimonial-slider.owl-carousel .owl-dots .owl-dot:hover span {
+    background: #65bd60;
+    transform: translate3d(0px, -50%, 0px) scale(0.7);
+    border-radius: 20px;
+}
+#testimonial-slider.owl-carousel .owl-dots{
+display: inline-block;
+width: 100%;
+text-align: center;
+  margin-top: 30px;
+}
+#testimonial-slider.owl-carousel .owl-dots .owl-dot{
+display: inline-block;
+}
+#testimonial-slider.owl-carousel .owl-dots .owl-dot span {
+    background: #65bd60;
+    display: inline-block;
+    height: 20px;
+    margin: 0 2px 5px;
+    transform: translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 20px;
+    border-radius: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  #testimonial-slider .owl-nav {
+    display: block;
+    margin: 0;
+  }
+  #testimonial-slider .owl-carousel-wrapper {
+    padding-bottom: 40px;
+  }
+  #testimonial-slider .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 47.5%;
+  }
+  #testimonial-slider .owl-nav .owl-prev {
+    position: absolute;
+    left: -100px;
+  }
+  #testimonial-slider .owl-nav .owl-next {
+    position: absolute;
+    right: -20px;
+  }
+}
